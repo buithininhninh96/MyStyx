@@ -1,0 +1,17 @@
+{
+  "name": "mystyx",
+  "version": "1.0.0",
+  "description": "-- SITE UNDER CONSTRUCTION --\r #Objective",
+  "main": "app.js",
+  "scripts": {
+    "devStart": "nodemon testing.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
