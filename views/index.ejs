@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/assets/style.css"/>
+      <title>MyStyx</title>
+
+    </head>
+
+    <body>
+
+      <h1 id="title">MyStyx</h1>
+      <p id="description">Perceive, Observe, Forecast.</p>
+
+      <form id="survey-form">
+
+        <fieldset>
+
+          <label for="name" id="name-label">Inquirer's name: <input id="name" type="text" placeholder="Enter your name" required /></label>
+
+          <label for="email" id="email-label">Inquirer's email: <input id="email" type="email" placeholder="Enter your email" required /></label>
+        
+          <label for="number" id="number-label">Life Path Number: <input id="number" type="number" min="5" max="999" placeholder="Eg.: 11" /></label>
+
+          <label>
+            <select id="dropdown">
+              <option value="">Select desired reading type</option>
+              <option value="1">Forecasting the Future</option>
+              <option value="2">Observing the Ongoings</option>
+              <option value="3">Perceiving the Past</option>
+              <option value="4">General/Non-specific</option>
+            </select>
+          </label>
+
+          <label for="selection" name="radio-options"><input type="radio" value="RadioOption1" name="RadioOptions" class="inline" /> 3 Cards Spread</label>
+          <label for="selection" name="radio-options"><input type="radio" value="RadioOption2" name="RadioOptions" class="inline" /> 5 Cards Spread</label>
+
+          <label>
+            The inquiry in question:<textarea id="" name="" rows="10" cols="30" placeholder="Enter your inquiries"></textarea>
+          </label>
+
+          <label for="tnc" name="tnc1"><input type="checkbox" id="tnc1" value="tnc1" class="inline" /> Upon receiving the readings in regards to the foretelling of the future, I understand that, despite testimonies, the future is not set in stone and is, therefore, subjected to changes due to variables unseen and unknown to us.</label>
+          <label for="tnc" name="tnc2"><input type="checkbox" id="tnc2" value="tnc2" class="inline" required /> I understand that the entities behind MyStyx are subjected to the laws of nature, henceforth, may not attend to my readings in timely manner. I will, therefore, make no fuss upon this incident. Unless, if motivated by the intense desire to see the reading through, I shall, in the most polite manner, urge the entity to take heed of my need.</label>
+          
+          <input type="submit" value="Submit" class="button" id="submit"/>
+
+        </fieldset>
+
+      </form>
+      
+    </body>
+
+  </html>
