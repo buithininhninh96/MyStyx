@@ -18,7 +18,6 @@ const filePathNew = path.join(__dirname, folderRes, fileNewTxt)
 app.set("view engine", "ejs")
 
 
-
 app.get("/", (req, res) => {
 
   console.log("This should display on the terminal as the page loads.")
