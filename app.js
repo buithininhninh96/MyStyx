@@ -23,12 +23,15 @@ app.get("/", (req, res) => {
   console.log("This should display on the terminal as the page loads.")
 
   //renders a ejs file
-  res.render('index')
+  res.render('home_page')
 
 })
 
 //__________________________________________________
 //accesses te public folder and allows index.ejs to link to other files in the public folder
 app.use(express.static("public"));
+
+const userRouter = require("./routes/reading_form")
+app.use("/", userRouter)
 
 app.listen(1234)

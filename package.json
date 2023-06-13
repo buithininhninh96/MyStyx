@@ -4,7 +4,7 @@
   "description": "-- SITE UNDER CONSTRUCTION --\r #Objective",
   "main": "app.js",
   "scripts": {
-    "devStart": "nodemon testing.js"
+    "dev": "nodemon testing.js"
   },
   "author": "",
   "license": "ISC",
