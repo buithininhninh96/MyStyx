@@ -20,7 +20,7 @@ app.set("view engine", "ejs")
 
 app.get("/", (req, res) => {
 
-  console.log("This should display on the terminal as the page loads.")
+  console.log("Homepage loaded.")
 
   //renders a ejs file
   res.render('home_page')
@@ -31,7 +31,10 @@ app.get("/", (req, res) => {
 //accesses te public folder and allows index.ejs to link to other files in the public folder
 app.use(express.static("public"));
 
-const userRouter = require("./routes/reading_form")
-app.use("/", userRouter)
+const loginAndRegisterRouter = require("./routes/login_and_registration")
+app.use("/", loginAndRegisterRouter)
+
+const readingRouter = require("./routes/reading_form")
+app.use("/", readingRouter)
 
 app.listen(1234)
