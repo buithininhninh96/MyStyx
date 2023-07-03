@@ -2,8 +2,8 @@
 //IMPORTING MODULES & DECLARING VARIABLES
 const path = require('path')
 const express = require("express")
-
 const app = express()
+const port = 1234
 
 /* const folderRes = "res_files"
 const fileLorem = "Lorem.txt"
@@ -37,4 +37,4 @@ app.use("/", loginAndRegisterRouter)
 const readingRouter = require("./routes/reading_form")
 app.use("/", readingRouter)
 
-app.listen(1234)
+app.listen(port)
