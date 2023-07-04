@@ -2,8 +2,6 @@ const express = require("express")
 const router = express.Router()
 const app = express()
 
-//supposedly allow us to extract form data to reqs
-app.use(express.urlencoded({ extended: false }))
 
 router.get("/login", (req, res) => {
     console.log("navigating the /login route.")
