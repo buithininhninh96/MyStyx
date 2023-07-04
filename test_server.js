@@ -1,6 +1,7 @@
 //importing the necessary modules:
 const express = require("express")
 const app = express()
+const router = express.Router()
 const bcrypt = require("bcrypt")
 const port = 4000
 
