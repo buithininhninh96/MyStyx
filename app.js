@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
   console.log("Homepage loaded.")
 
   //renders a ejs file
-  res.render('home_page')
+  res.render('index')
 
 })
 

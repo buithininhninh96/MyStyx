@@ -2,6 +2,7 @@
 const express = require("express")
 const app = express()
 const router = express.Router()
+const expressLayout = require("express-ejs-layouts")
 const bcrypt = require("bcrypt")
 const port = 4000
 
@@ -10,6 +11,8 @@ const users = []
 
 //sets the view engine to ejs
 app.set("view engine", "ejs")
+app.set("layout", "layout/layout")
+app.use(expressLayout)
 
 //allows us to access public folder to use css in the ejs file
 app.use(express.static("public"))
